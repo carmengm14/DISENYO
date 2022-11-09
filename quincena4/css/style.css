@@ -1,0 +1,537 @@
+/* GENERAL */
+* {
+	margin: 0;
+    padding: 0;
+}
+
+.Header {grid-area: header;}
+.info {grid-area: info;}
+.Aside {grid-area: aside;}
+.Footer {grid-area: footer;}
+
+
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'info info info info aside aside'
+    'footer footer footer footer footer footer ';
+    margin-right: 24%;
+    margin-left: 24%;
+    padding: 10px;
+}
+
+.container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+/* FINALIZA GENERAL */
+
+/* HEADER */
+
+.Logo {grid-area: logo;}
+.menuPrincipal {grid-area: menuPrincipal;}
+.subtitulos {grid-area: subtitulos;}
+.menu2 {grid-area: menu2;}
+/* .SelectLanguage {grid-area: selectLanguage;} */
+
+.Header {
+    display: grid;
+    grid-template-areas:
+    'logo logo menuPrincipal menuPrincipal menuPrincipal menuPrincipal'
+    'subtitulos subtitulos subtitulos subtitulos subtitulos subtitulos'
+    'menu2 menu2 menu2 menu2 menu2 menu2';
+    background-color: #2196F3;
+}
+
+.Header > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Logo {
+    padding-right: 100px;
+}
+
+.Logo > img {
+    float: left;
+}
+
+.menuPrincipal {
+    display: grid;
+}
+
+.inicioNav a {
+    float: right;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    border-radius: 5px;
+
+    margin-top: 20px;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.inicioNav a:hover {
+    background-color: #00bcff;
+}
+
+.inicioNav ul {
+    list-style: none;
+}
+
+.inicioNav ul li {
+    display: inline;
+}
+
+.navegacionPrincipal a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    background-color: #E9E9E9;
+    margin-left: 5px;
+    border-radius: 5px;
+
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.navegacionPrincipal a:hover {
+    background-color: #00bcff;
+}
+
+.navegacionPrincipal ul {
+    list-style: none;
+}
+
+.navegacionPrincipal ul li {
+    display: inline;
+    float: right;
+}
+
+.subtitulos h1 {
+    text-align: justify;
+    color: #077782;
+}
+
+/* ARROW SECOND MENU */
+.menu2 a {
+    text-align: center;
+    color: #000;
+    background-color: #E9E9E9;
+    margin-right: 3px !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    padding: 10px !important;
+    text-decoration: none;
+    position: relative; /* Arrow position important*/
+
+}
+
+.menu2 a:hover, .active {
+    font-weight: bold;
+}
+
+.menu2 a:hover::after {
+    content: "";
+    display: block;
+    border: 12px solid transparent;
+    border-top-color:#00bcff; 
+    position: absolute;
+    bottom: 0px;
+    top: 37px;
+    left: 50%;
+    margin-left: -12px;
+}
+/* ARROW SECOND MENU */
+
+.menu2 > ul {
+    float: left;
+    list-style: none;
+}
+
+.menu2 > ul > li {
+    display: inline;
+}
+
+.menu2 a {
+    text-decoration: none;
+}
+
+input.checkFormulario {
+    position: absolute;
+    left: -99999em;
+    top: -99999em;
+    opacity: 1;
+    z-index: 1;
+}
+  
+input.checkFormulario+label {
+    cursor: pointer;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 2px;
+    margin-right: -5px;
+}
+  
+input.checkFormulario+label:hover {
+    background-color:#00bcff;
+}
+  
+[type=radio]:checked+label {
+    background-color: #aaa;
+    z-index: 1;
+}
+
+.menu2 hr {
+    width: 100%;
+    margin-top: 0.9%
+}
+
+/* FINALIZA HEADER */
+
+/* info */
+
+.info {
+    display: grid;
+    background-color: #2196F3;
+}
+
+.info > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+}
+
+/* contenidoPrograma SIDE */
+
+.contenidoPrograma-titulo {
+    color: #4ebec9;
+}
+
+.info-content{
+    margin: 0 auto;
+    clear: both;
+    display: flex;
+}
+
+.contenidoPrograma-content {
+    vertical-align:middle;
+}
+
+.contenidoPrograma-content > p{
+    margin-top: 15px;
+}
+
+.contenidoPrograma-img > img{
+    display: block;
+    margin: 10px 50px 10px 50px;  /* Top Right Bottom left */
+}
+
+.contenidoPrograma > * {
+    text-align: justify;
+}
+
+/* FINALIZA contenidoPrograma SIDE */
+
+/* SCHEDULE */
+
+.schedule-titulo {
+    color: #077782;
+    margin-bottom: 10px;
+}
+
+.Schedule > * {
+    text-align: justify;
+}
+
+.rosa{
+    background-color: pink;
+    border: pink;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.226);
+    border-style: solid;
+    transform: rotate(3deg);
+}
+
+.verde{
+    background-color: rgb(131, 210, 131);
+    border: rgb(131, 210, 131);
+    border-style: solid;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.226);
+    transform: rotate(-3deg);
+}
+.amarillo{
+    background-color: rgb(221, 224, 124);
+    border: rgb(221, 224, 124);
+    border-style: solid;
+    transform: rotate(-3deg);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.226);
+}
+.azul{
+    background-color: rgb(67, 163, 180);
+    border: rgb(67, 163, 180);
+    border-style: solid;
+    transform: rotate(3deg);
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.226);
+}
+
+
+
+/* FINALIZA SCHEDULE */
+
+/* FESTIVAL SPACES */
+
+.festival-titulo {
+    color: #077782;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.festival-texto {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.festival-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.festival-boxes > div {
+    border: 1px solid slateblue;
+    width: 100%;
+    height: 180px;
+    text-align: left;
+}
+
+.festival-boxes > div > h2 {
+    color: #3d5e7a;
+}
+
+.festival-boxes > div > * {
+    margin: 15px;
+}
+
+.festival-places-FINALIZA-texto {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.festival-ULTIMO-titulo {
+    margin-top: 10px;
+    color: #4ebec9;
+}
+
+/* FINALIZA FESTIVAL SPACES */
+
+/* FINALIZA info */
+
+/* ASIDE */
+
+.Aside {
+    display: grid;
+    grid-template-columns: 340px;
+    grid-template-rows: 130px 220px 470px 1fr 1fr;
+}
+
+.Aside > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Aside .Register {
+    background-color: #99cdff;
+    border-radius: 10px;
+}
+
+.Aside .Register > button {
+    height: 70px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: #000;
+    background-color: #8bcf68;
+    color: #fff;
+    margin-bottom: 10px;
+    box-shadow: #000;
+}
+
+.Aside .Register > p {
+    color:#0077EE;
+}
+
+.WhatAllAbout > *{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.WhatAllAbout > h3{
+    text-align: justify;
+    color: #077782;
+}
+
+.WhatAllAbout > p, a{
+    text-align: justify;
+    text-decoration: none;
+}
+
+.Aside-list > *{
+    background-color: #E9E9E9;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 2px;
+}
+
+.Aside-list ul li {
+    margin: 0 auto;
+    clear: both;
+    display: flex;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.Aside-list ul li > p{
+    margin-left: 10px;
+}
+
+.Aside-WhoShouldCome-content {
+    background-color: #FFFDC8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: #000;
+}
+
+.Aside-WhoShouldCome > * {
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.Aside-WhoShouldCome h1{
+    color: #9a181b;
+    text-align: left;
+}
+
+.Aside-WhoShouldCome ul{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.Aside-WhoShouldCome ul li{
+    list-style: none;
+    margin: 0 auto;
+    clear: both;
+    display: flex;
+}
+
+.Aside-Networks > * {
+    text-align: justify;
+}
+
+.Aside-Networks ul{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.Aside-Networks .identica {
+    clear: both;
+    display: flex;
+    width: 220px;
+
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+
+    border-radius: 10px;
+    background-color: #7db4c9;
+}
+
+.Aside-Networks .twitter {
+    clear: both;
+    display: flex;
+    width: 220px;
+
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    
+    border-radius: 10px;
+    background-color: #00bcff;
+}
+
+.Aside-Networks .identica:hover {
+    background-color: #00bcff;
+}
+
+.Aside-Networks .twitter:hover {
+    background-color: #00bcff;
+}
+
+.Aside-Networks .identica p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.Aside-Networks .twitter p{
+    margin-top: 10px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+/* FINALIZA ASIDE */
+
+/* FOOTER */
+
+.Footer {
+    display: flex;
+}
+
+.Footer > div {
+    background-color: #7a7771;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.Footer ul {
+    list-style: none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.Footer ul li {
+    margin: 0 auto;
+    clear: both;
+    display: flex;
+    margin-top: 10px;
+}
+
+.Footer ul li > p{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.footer-policy-texto  ul li > p{
+    color: #000;
+    text-align: right;
+}
+
+
+/* FINALIZA FOOTER */
